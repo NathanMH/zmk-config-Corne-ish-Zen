@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-
+#define NAV 1
 
 / {
         keymap {
@@ -19,10 +19,19 @@
                 default_layer {
                         label = "DEFAULT";
                         bindings = <
-   &kp TAB   &kp Q     &kp W     &kp F     &kp P     &kp G            &kp J     &kp L      &kp U     &kp Y     &kp SEMI  &kp BSLH
+   &kp TAB   &lt 1 Q   &kp W     &kp F     &kp P     &kp G            &kp J     &kp L      &kp U     &kp Y     &kp SEMI  &kp BSLH
    &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp D            &kp H     &kp N      &kp E     &kp I     &kp O     &kp APOS
    &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B            &kp K     &kp M      &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
                                  &kp LALT  &kp LGUI  &kp BSPC         &kp RET   &kp SPACE  &kp E
+                        >;
+                };
+				nav_layer {
+						label = "NAV"
+                        bindings = <
+   &kp TAB   &none     &none     &none     &none     &none            &kp DOWN  &kp RIGHT  &none     &kp HOME  &kp END   &none
+   &kp LCTRL &none     &none     &none     &none     &none            &kp LEFT  &none      &none     &none     &none     &none
+   &kp LSHFT &none     &none     &none     &none     &none            &kp UP    &none      &none     &none     &none     &none
+                                 &kp LATL  &kp LGUI  &kp BSPC         &kp RET   &kp SPACE  &none
                         >;
                 };
         };
