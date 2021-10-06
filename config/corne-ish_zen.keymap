@@ -15,34 +15,12 @@
 #define WIN 3
 #define SYM 4
 
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_bt_switch {
-            timeout-ms = <50>;
-            key-positions = <12 23>;
-            bindings = <&bt BT_NXT>;
-        };
-	combo_f5 {
-	    timeout-ms = <50>;
-	    key-positions = <>;
-	    bindings = <>;
-	};
-    };
-};
-
 / {
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |   TAB   | Q (nav) |    W    |    F    |    P    |    G    |      |    J    |    L     |    U    |    Y    |    ;    |    \    |
-// |   CTRL  |    A    |    R    |    S    |    T    |    D    |      |    H    |    N     |    E    |    I    |    O    |    '    |
-// |   SHIFT |    Z    | X (win+)|    C    |    V    |    B    |      |    K    |    M     |    ,    |    .    |    /    |   SHFT  |
-//                               |   ALT   |   GUI   |   BSPC  |      |   ENT   |  SPACE   |  LAYER? |
-// ---------------------------------------------------------------------------------------------------------------------------------
+                        label = "DEFAULT";
                         bindings = <
    &kp TAB   &lt 1 Q   &kp W     &kp F     &kp P     &kp G            &kp J     &kp L      &kp U     &kp Y     &kp SEMI  &kp BSLH
    &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp D            &kp H     &kp N      &kp E     &kp I     &kp O     &kp APOS
@@ -51,13 +29,8 @@
                         >;
                 };
 
-                nav_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |   TAB   |         |         |         |         |         |      |   DOWN  |  RIGHT   |         |   HOME  |   END   |         |
-// |   CTRL  |         |         |         |         |         |      |   LEFT  |          |         |         |         |         |
-// |   SHIFT |         |         |         |         |         |      |   UP    |          |         |         |         |         |
-//                               |   ALT   |   GUI   |   BSPC  |      |   ENT   |  SPACE   |         |
-// ---------------------------------------------------------------------------------------------------------------------------------
+                gaming_layer {
+                        label = "NAV";
                         bindings = <
    &kp TAB   &none     &none     &none     &none     &none            &kp DOWN  &kp RIGHT  &none     &kp HOME  &kp END   &none
    &kp LCTRL &none     &none     &none     &none     &none            &kp LEFT  &none      &none     &none     &none     &none
@@ -67,13 +40,8 @@
                 };
 
                 numpad_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |   TAB   |         |         |         |         |         |      |         |    7     |    8    |    9    |         |         |
-// |   CTRL  |         |         |         |         |         |      |         |    4     |    5    |    6    |         |         |
-// |   SHIFT |         |         |         |         |         |      |    0    |    1     |    2    |    3    |         |         |
-//                               |   ALT   |   GUI   |   BSPC  |      |   ENT   |  SPACE   |         |
-// ---------------------------------------------------------------------------------------------------------------------------------
-                        bindings = <
+                        label = "NUM";
+                        bindings = < 
    &KP TAB   &none     &none     &none     &none     &none            &none     &kp n7     &kp N8    &kp N9    &none     &none
    &kp LCTRL &none     &none     &none     &none     &none            &none     &kp N4     &kp N5    &kp N6    &none     &none
    &kp LSHFT &none     &none     &none     &none     &none            &kp N0    &kp N1     &kp N2    &kp N3    &none     &none
@@ -82,12 +50,7 @@
                 };
 
                 win_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |   TAB   |         |         |         |         |         |      | WIN+DOWN| WIN+RIGHT|         |         |         |         |
-// |   CTRL  |         |         |         |         |         |      | WIN+LEFT|          |         |         |         |         |
-// |   SHIFT |         |         |         |         |         |      | WIN+UP  |          |         |         |         |         |
-//                               |   ALT   |   GUI   |   BSPC  |      |   ENT   |  SPACE   |         |
-// ---------------------------------------------------------------------------------------------------------------------------------
+                        label = "WIN";
                         bindings = <
    &kp TAB   &none     &none     &none     &none     &none            &kp LG(DOWN)  &kp LG(RIGHT)  &none     &none     &none     &none
    &kp LCTRL &none     &none     &none     &none     &none            &kp LG(LEFT)  &none      &none     &none     &none     &none
@@ -97,13 +60,7 @@
                 };
 
                 sym_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// Use tap hold F?
-// |         |         |         |         |   =/+   |    (    |      |    )    |   -/_    |         |         |         |         |
-// |         |         |         |         |         |    [    |      |    ]    |          |         |         |         |         |
-// |         |         |         |         |         |    {    |      |    }    |          |         |         |         |         |
-//                               |         |         |         |      |         |          |         |
-// ---------------------------------------------------------------------------------------------------------------------------------
+                        label = "SYM";
                         bindings = <
    &kp TAB   &none     &none     &none     &none     &none            &none         &none      &none     &none     &none     &none
    &kp LCTRL &none     &none     &none     &none     &none            &none         &none      &none     &none     &none     &none
@@ -111,8 +68,5 @@
                                  &kp LALT  &kp LGUI  &kp BSPC         &kp RET   &kp SPACE  &none
                         >;
                 };
-
-
-
         };
 };
