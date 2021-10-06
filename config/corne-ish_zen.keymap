@@ -19,19 +19,19 @@
                 default_layer {
                         label = "DEFAULT";
                         bindings = <
-   &kp TAB   &lt 1 Q   &kp W     &kp F     &kp P     &kp G            &kp J     &kp L      &kp U     &kp Y     &kp SEMI  &kp BSLH
+   &kp TAB   &kp Q     &kp W     &kp F     &kp P     &kp G            &kp J     &kp L      &kp U     &kp Y     &kp SEMI  &kp BSLH
    &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp D            &kp H     &kp N      &kp E     &kp I     &kp O     &kp APOS
    &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B            &kp K     &kp M      &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
-                                 &kp LALT  &kp LGUI  &kp BSPC         &kp RET   &kp SPACE  &kp E
+                                 &kp LALT  &kp LGUI  &kp BSPC         &kp RET   &kp SPACE  &mo 1
                         >;
                 };
 				nav_layer {
-						label = "NAV"
+						label = "NAV";
                         bindings = <
-   &kp TAB   &trans     &trans     &trans     &trans     &trans            &kp DOWN  &kp RIGHT   &trans     &kp HOME   &kp END    &trans
-   &kp LCTRL &trans     &trans     &trans     &trans     &trans            &kp LEFT  &trans      &trans     &trans     &trans     &trans
-   &kp LSHFT &trans     &trans     &trans     &trans     &trans            &kp UP    &trans      &trans     &trans     &trans     &trans
-                                   &kp LATL   &kp LGUI   &kp BSPC          &kp RET   &kp SPACE   &trans
+   &kp TAB   &none     &none     &none     &none     &none            &kp DOWN  &kp RIGHT   &none     &kp HOME  &kp END  &none
+   &kp LCTRL &none     &none     &none     &none     &none            &kp LEFT  &none       &none     &none     &none     &none
+   &kp LSHFT &none     &none     &none     &none     &none            &kp UP    &none       &none     &none     &none     &none
+                                 &kp LATL  &kp LGUI  &kp BSPC         &kp RET   &kp SPACE   &none
                         >;
                 };
         };
