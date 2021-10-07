@@ -14,6 +14,7 @@
 #define NUM 2
 #define WIN 3
 #define SYM 4
+#define BT 5
 
 / {
         keymap {
@@ -31,7 +32,7 @@
    &kp TAB   &lt 1 Q   &kp W     &kp F     &kp P     &kp G            &kp J     &kp L      &kp U     &kp Y     &kp SEMI  &kp BSLH
    &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp D            &kp H     &kp N      &kp E     &kp I     &kp O     &kp APOS
    &kp LSHFT &lt 2 Z   &lt 3 X   &kp C     &kp V     &kp B            &kp K     &kp M      &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
-                                 &kp LALT  &kp BSPC  &kp LGUI         &kp RET   &kp SPACE  &bt BT_NXT
+                                 &kp LALT  &kp BSPC  &kp LGUI         &kp RET   &kp SPACE  &mo 5
                         >;
                 };
 
@@ -96,7 +97,23 @@
    &kp TAB   &none     &none     &none     &none     &none            &none         &none      &none     &none     &none     &none
    &kp LCTRL &none     &none     &none     &none     &none            &none         &none      &none     &none     &none     &none
    &kp LSHFT &none     &none     &none     &none     &none            &none         &none      &none     &none     &none     &none
-                                 &kp LALT  &kp LGUI  &kp BSPC         &kp RET   &kp SPACE  &none
+                                 &kp LALT  &kp LGUI  &kp BSPC         &kp RET       &kp SPACE  &none
+                        >;
+                };
+				
+				bt_layer {
+						label = "BT";
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |         |         |         |         |   =/+   |    (    |      |    )    |   -/_    |         |         |         |         |
+// |         |         |         |         |         |    [    |      |    ]    |          |         |         |         |         |
+// |         |         |         |         |         |    {    |      |    }    |          |         |         |         |         |
+//                               |         |         |         |      |         |          |         |
+// ---------------------------------------------------------------------------------------------------------------------------------
+                        bindings = <
+   &none 	 &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 3     &bt BT_SEL 4     &none            &none         &none      &none     &none     &none     &none
+   &none  	 &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
+   &none     &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
+											   &none     		&bt BT_CLR     	 &none            &none         &none	   &none
                         >;
                 };
         };
