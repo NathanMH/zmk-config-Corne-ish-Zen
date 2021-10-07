@@ -30,9 +30,9 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
    &kp TAB   &lt 1 Q   &kp W     &kp F     &kp P     &kp G            &kp J     &kp L      &kp U     &kp Y     &kp SEMI  &kp BSLH
-   &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp D            &kp H     &kp N      &kp E     &kp I     &kp O     &kp APOS
+   &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp D            &kp H     &kp N      &kp E     &kp I     &kp O     &lt 4 APOS
    &kp LSHFT &lt 2 Z   &lt 3 X   &kp C     &kp V     &kp B            &kp K     &kp M      &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
-                                 &kp LALT  &kp BSPC  &kp LGUI         &kp RET   &kp SPACE  &mo 5
+                                 &kp LALT  &kp BSPC  &lt 2 LGUI       &kp RET   &kp SPACE  &mo 5
                         >;
                 };
 
@@ -101,20 +101,20 @@
                         >;
                 };
 				
-				bt_layer {
-						label = "BLUE";
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-//                               |         |         |         |      |         |          |         |
-// ---------------------------------------------------------------------------------------------------------------------------------
-                        bindings = <
-   &none   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 3     &bt BT_SEL 4     &none            &bt BT_PRV    &none      &none     &none     &none     &bt BT_NXT
-   &none   &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
-   &none   &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
-											   &none     		&bt BT_CLR     	 &none            &none         &none	   &none
-                        >;
-                };
+//				bt_layer {
+//						label = "BLUE";
+//// ---------------------------------------------------------------------------------------------------------------------------------
+//// |         |         |         |         |         |         |      |         |          |         |         |         |         |
+//// |         |         |         |         |         |         |      |         |          |         |         |         |         |
+//// |         |         |         |         |         |         |      |         |          |         |         |         |         |
+////                               |         |         |         |      |         |          |         |
+//// ---------------------------------------------------------------------------------------------------------------------------------
+//                        bindings = <
+//   &none   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 3     &bt BT_SEL 4     &none            &bt BT_PRV    &none      &none     &none     &none     &bt BT_NXT
+//   &none   &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
+//   &none   &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
+//											   &none     		&bt BT_CLR     	 &none            &none         &none	   &none
+//                        >;
+//                };
         };
 };
