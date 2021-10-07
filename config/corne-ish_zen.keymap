@@ -24,15 +24,15 @@
 						label = "DEFAULT";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |   TAB   | Q (nav) |    W    |    F    |    P    |    G    |      |    J    |    L     |    U    |    Y    |    ;    |    \    |
-// |   CTRL  |    A    |    R    |    S    |    T    |    D    |      |    H    |    N     |    E    |    I    |    O    |    '    |
+// |   CTRL  |    A    |    R    |    S    |    T    |    D    |      |    H    |    N     |    E    |    I    |    O    | ' (SYM) |
 // |   SHIFT |    Z    | X (win+)|    C    |    V    |    B    |      |    K    |    M     |    ,    |    .    |    /    |   SHFT  |
-//                               |   ALT   |   BSPC  |   GUI   |      |   ENT   |  SPACE   |   BT?   |
+//                               |   ALT   |   BSPC  |GUI (NUM)|      |   ENT   |  SPACE   |   BT?   |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
    &kp TAB   &lt 1 Q   &kp W     &kp F     &kp P     &kp G            &kp J     &kp L      &kp U     &kp Y     &kp SEMI  &kp BSLH
    &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp D            &kp H     &kp N      &kp E     &kp I     &kp O     &lt 4 APOS
    &kp LSHFT &lt 2 Z   &lt 3 X   &kp C     &kp V     &kp B            &kp K     &kp M      &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
-                                 &kp LALT  &kp BSPC  &lt 2 LGUI       &kp RET   &kp SPACE  &mo 5
+                                 &kp LALT  &kp BSPC  &lt 2 LGUI       &kp RET   &kp SPACE  &lt BLUE DEL
                         >;
                 };
 
