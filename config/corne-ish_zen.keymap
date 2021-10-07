@@ -14,7 +14,7 @@
 #define NUM 2
 #define WIN 3
 #define SYM 4
-#define BT 5
+#define BLUE 5
 
 / {
         keymap {
@@ -101,20 +101,20 @@
                         >;
                 };
 				
-//				bt_layer {
-//						label = "BT";
-//// ---------------------------------------------------------------------------------------------------------------------------------
-//// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-//// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-//// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-////                               |         |         |         |      |         |          |         |
-//// ---------------------------------------------------------------------------------------------------------------------------------
-//                        bindings = <
-//   &none 	 &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 3     &bt BT_SEL 4     &none            &bt BT_PRV    &none      &none     &none     &none     &bt BT_NXT
-//   &none  	 &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
-//   &none     &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
-//											   &none     		&bt BT_CLR     	 &none            &none         &none	   &none
-//                        >;
-//                };
+				bt_layer {
+						label = "BLUE";
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |         |         |         |         |         |         |      |         |          |         |         |         |         |
+// |         |         |         |         |         |         |      |         |          |         |         |         |         |
+// |         |         |         |         |         |         |      |         |          |         |         |         |         |
+//                               |         |         |         |      |         |          |         |
+// ---------------------------------------------------------------------------------------------------------------------------------
+                        bindings = <
+   &none   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 3     &bt BT_SEL 4     &none            &bt BT_PRV    &none      &none     &none     &none     &bt BT_NXT
+   &none   &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
+   &none   &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
+											   &none     		&bt BT_CLR     	 &none            &none         &none	   &none
+                        >;
+                };
         };
 };
