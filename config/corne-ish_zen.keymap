@@ -78,8 +78,8 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
    &kp TAB   &none     &none     &none     &none     &none            &kp LG(DOWN)  &kp LG(RIGHT)  &none     &none     &none     &none
-   &kp LCTRL &none     &none     &none     &none     &none            &kp LG(LEFT)  &none      &none     &none     &none     &none
-   &kp LSHFT &none     &none     &none     &none     &none            &kp LG(UP)    &none      &none     &none     &none     &none
+   &kp LCTRL &none     &none     &none     &none     &none            &kp LG(LEFT)  &none      	   &none     &none     &none     &none
+   &kp LSHFT &none     &none     &none     &none     &none            &kp LG(UP)    &none      	   &none     &none     &none     &none
                                  &kp LALT  &kp BSPC  &kp LGUI         &kp RET   &kp SPACE  &none
                         >;
                 };
@@ -87,16 +87,15 @@
                 sym_layer {
 						label = "SYM";
 // ---------------------------------------------------------------------------------------------------------------------------------
-// Use tap hold F?
 // |         |         |         |         |   =/+   |    (    |      |    )    |   -/_    |         |         |         |         |
 // |         |         |         |         |         |    [    |      |    ]    |          |         |         |         |         |
 // |         |         |         |         |         |    {    |      |    }    |          |         |         |         |         |
 //                               |         |         |         |      |         |          |         |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
-   &kp TAB   &none     &none     &none     &none     &none            &none         &none      &none     &none     &none     &none
-   &kp LCTRL &none     &none     &none     &none     &none            &none         &none      &none     &none     &none     &none
-   &kp LSHFT &none     &none     &none     &none     &none            &none         &none      &none     &none     &none     &none
+   &kp TAB   &none     &none     &none     &kp EQUAL &kp LPAR         &kp RPAR      &kp MINUS  &none     &none     &none     &none
+   &kp LCTRL &none     &none     &none     &none     &kp LBKT         &kp RBKT      &none      &none     &none     &none     &none
+   &kp LSHFT &none     &none     &none     &none     &kp LBRC         &kp RBRC      &none      &none     &none     &none     &none
                                  &kp LALT  &kp LGUI  &kp BSPC         &kp RET       &kp SPACE  &none
                         >;
                 };
@@ -110,7 +109,7 @@
 ////                               |         |         |         |      |         |          |         |
 //// ---------------------------------------------------------------------------------------------------------------------------------
 //                        bindings = <
-//   &none   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 3     &bt BT_SEL 4     &none            &bt BT_PRV    &none      &none     &none     &none     &bt BT_NXT
+//   &none   &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT            &bt BT_PRV    &none      &none     &none     &none     &bt BT_NXT
 //   &none   &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
 //   &none   &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
 //											   &none     		&bt BT_CLR     	 &none            &none         &none	   &none
