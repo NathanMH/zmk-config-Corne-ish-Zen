@@ -87,33 +87,33 @@
                 sym_layer {
 						label = "SYM";
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |         |         |         |         |   =/+   |    (    |      |    )    |   -/_    |         |         |         |         |
-// |         |         |         |         |         |    [    |      |    ]    |          |         |         |         |         |
-// |         |         |         |         |         |    {    |      |    }    |          |         |         |         |         |
-//                               |         |         |         |      |         |          |         |
+// |   TAB   |         |         |         |   =/+   |    (    |      |    )    |   -/_    |         |         |         |         |
+// |   CTRL  |         |         |         |         |    [    |      |    ]    |          |         |         |         |         |
+// |   SHIFT |         |         |         |         |    {    |      |    }    |          |         |         |         |         |
+//                               |   ALT   |   BSPC  |   GUI   |      |   ENT   |  SPACE   |         |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
-   &kp TAB   &none     &none     &none     &kp EQUAL &kp LPAR         &kp RPAR      &kp MINUS  &none     &none     &none     &none
+   &kp TAB   &none     &none     &none     &kp EQUAL &kp LPAR         &kp RPAR      &kp MINUS  &none     &none     &none     &bt BT_NXT
    &kp LCTRL &none     &none     &none     &none     &kp LBKT         &kp RBKT      &none      &none     &none     &none     &none
    &kp LSHFT &none     &none     &none     &none     &kp LBRC         &kp RBRC      &none      &none     &none     &none     &none
                                  &kp LALT  &kp BSPC  &kp LGUI         &kp RET       &kp SPACE  &none
                         >;
                 };
 				
-				bt_layer {
-						label = "BLUE";
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-//                               |         |         |         |      |         |          |         |
-// ---------------------------------------------------------------------------------------------------------------------------------
-                        bindings = <
-   &none     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_SEL 5     &bt BT_PRV    &none      &none     &none     &none     &bt BT_NXT
-   &none     &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
-   &none     &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
-											   &none     		&bt BT_CLR     	 &none            &none         &none	   &none
-                        >;
-                };
+//				bt_layer {
+//						label = "BLUE";
+//// ---------------------------------------------------------------------------------------------------------------------------------
+//// |         |         |         |         |         |         |      |         |          |         |         |         |         |
+//// |         |         |         |         |         |         |      |         |          |         |         |         |         |
+//// |         |         |         |         |         |         |      |         |          |         |         |         |         |
+////                               |         |         |         |      |         |          |         |
+//// ---------------------------------------------------------------------------------------------------------------------------------
+//                        bindings = <
+//   &none     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_SEL 5     &bt BT_PRV    &none      &none     &none     &none     &bt BT_NXT
+//   &none     &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
+//   &none     &none     		  &none     	   &none     		&none     		 &none            &none         &none      &none     &none     &none     &none
+//											   &none     		&bt BT_CLR     	 &none            &none         &none	   &none
+//                        >;
+//                };
         };
 };
