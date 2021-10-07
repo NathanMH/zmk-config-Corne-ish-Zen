@@ -93,7 +93,7 @@
 //                               |   ALT   |   BSPC  |   GUI   |      |   ENT   |  SPACE   |         |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
-   &kp TAB   &none     &none     &none     &kp EQUAL &kp LPAR         &kp RPAR      &kp MINUS  &none     &none     &none     &bt BT_NXT
+   &kp TAB   &none     &none     &none     &kp EQUAL &kp LPAR         &kp RPAR      &kp MINUS  &none     &none     &none     &none
    &kp LCTRL &none     &none     &none     &none     &kp LBKT         &kp RBKT      &none      &none     &none     &none     &none
    &kp LSHFT &none     &none     &none     &none     &kp LBRC         &kp RBRC      &none      &none     &none     &none     &none
                                  &kp LALT  &kp BSPC  &kp LGUI         &kp RET       &kp SPACE  &none
