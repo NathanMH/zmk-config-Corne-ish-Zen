@@ -24,15 +24,15 @@
 						label = "DEFAULT";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |   TAB   | Q (nav) |    W    |    F    |    P    |    G    |      |    J    |    L     |    U    |    Y    |    ;    |    \    |
-// |   CTRL  |    A    |    R    |    S    |    T    |    D    |      |    H    |    N     |    E    |    I    |    O    | ' (SYM) |
+// |   CTRL  |    A    |    R    |    S    |    T    |    D    |      |    H    |    N     |    E    |    I    |    O    |    '    |
 // |   SHIFT |    Z    | X (win+)|    C    |    V    |    B    |      |    K    |    M     |    ,    |    .    |    /    |   SHFT  |
 //                               |   ALT   |   BSPC  |GUI (NUM)|      |   ENT   |  SPACE   |   BT?   |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
    &kp TAB   &lt 1 Q   &kp W     &kp F     &kp P     &kp G            &kp J     &kp L      &kp U     &kp Y     &kp SEMI  &kp BSLH
    &kp LCTRL &kp A     &kp R     &kp S     &kp T     &kp D            &kp H     &kp N      &kp E     &kp I     &kp O     &lt 4 APOS
-   &kp LSHFT &lt 2 Z   &lt 3 X   &kp C     &kp V     &kp B            &kp K     &kp M      &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
-                                 &kp LALT  &kp BSPC  &lt 2 LGUI       &kp RET   &kp SPACE  &lt BLUE DEL
+   &kp LSHFT &kp Z     &lt 3 X   &kp C     &kp V     &kp B            &kp K     &kp M      &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
+                                 &kp LALT  &kp BSPC  &lt 2 LGUI       &kp RET   &kp SPACE  &lt 5 DEL
                         >;
                 };
 
@@ -41,30 +41,30 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |   ESC   |         |         |         |         |         |      |   DOWN  |  RIGHT   |         |   HOME  |   END   |         |
 // |   CTRL  |         |         |         |         |         |      |   LEFT  |          |         |         |         |         |
-// |   SHIFT |         |         |         |         |         |      |   UP    |          |         |         |         |         |
+// |   SHIFT |         |         |         |         |         |      |   UP    |          |         |         |         |   SHFT  |
 //                               |   ALT   |   BSPC  |   GUI   |      |   ENT   |  SPACE   |         |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
    &kp ESC   &trans    &none     &none     &none     &none            &kp DOWN  &kp RIGHT  &none     &kp HOME  &kp END   &none
    &kp LCTRL &none     &none     &none     &none     &none            &kp LEFT  &none      &none     &none     &none     &none
-   &kp LSHFT &trans    &trans    &none     &none     &none            &kp UP    &none      &none     &none     &none     &none
-                                 &kp LALT  &kp BSPC  &trans           &kp RET   &kp SPACE  &none
+   &kp LSHFT &none     &trans    &none     &none     &none            &kp UP    &none      &none     &none     &none     &trans
+                                 &trans    &trans    &trans           &trans    &trans     &trans
                         >;
                 };
 
                 numpad_layer {
-						label = "NUM";
+						label = "NUMBERS";
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |   TAB   |         |         |         |         |         |      |         |    7     |    8    |    9    |         |         |
 // |   CTRL  |         |         |         |         |         |      |         |    4     |    5    |    6    |         |         |
-// |   SHIFT |         |         |         |         |         |      |    0    |    1     |    2    |    3    |         |         |
+// |   SHIFT |         |         |         |         |         |      |    0    |    1     |    2    |    3    |         |   SHFT  |
 //                               |   ALT   |   BSPC  |   GUI   |      |   ENT   |  SPACE   |         |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
    &kp TAB   &trans    &none     &none     &none     &none            &none     &kp N7     &kp N8    &kp N9    &none     &none
    &kp LCTRL &none     &none     &none     &none     &none            &none     &kp N4     &kp N5    &kp N6    &none     &none
-   &kp LSHFT &trans    &trans    &none     &none     &none            &kp N0    &kp N1     &kp N2    &kp N3    &none     &none
-                                 &kp LALT  &kp BSPC  &trans           &kp RET   &kp SPACE  &none
+   &kp LSHFT &trans    &trans    &none     &none     &none            &kp N0    &kp N1     &kp N2    &kp N3    &none     &trans
+                                 &trans    &trans    &trans           &trans    &trans     &trans
                         >;
                 };
 
@@ -73,30 +73,30 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |   TAB   |         |         |         |         |         |      | WIN+DOWN| WIN+RIGHT|         |         |         |         |
 // |   CTRL  |         |         |         |         |         |      | WIN+LEFT|          |         |         |         |         |
-// |   SHIFT |         |         |         |         |         |      | WIN+UP  |          |         |         |         |         |
+// |   SHIFT |         |         |         |         |         |      | WIN+UP  |          |         |         |         |   SHFT  |
 //                               |   ALT   |   BSPC  |   GUI   |      |   ENT   |  SPACE   |         |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
    &kp TAB   &trans    &none     &none     &none     &none            &kp LG(DOWN)  &kp LG(RIGHT)  &none     &none     &none     &none
    &kp LCTRL &none     &none     &none     &none     &none            &kp LG(LEFT)  &none      	   &none     &none     &none     &none
-   &kp LSHFT &trans    &trans    &none     &none     &none            &kp LG(UP)    &none      	   &none     &none     &none     &none
-                                 &kp LALT  &kp BSPC  &trans           &kp RET       &kp SPACE      &none
+   &kp LSHFT &trans    &trans    &none     &none     &none            &kp LG(UP)    &none      	   &none     &none     &none     &trans
+                                 &trans    &trans    &trans           &trans        &trans         &none
                         >;
                 };
 
                 sym_layer {
-						label = "SYM";
+						label = "SYMBOLS";
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |   TAB   |         |         |         |   =/+   |    (    |      |    )    |   -/_    |         |         |         |         |
-// |   CTRL  |         |         |         |         |    [    |      |    ]    |          |         |         |         |         |
-// |   SHIFT |         |         |         |         |    {    |      |    }    |          |         |         |         |         |
+// |   TAB   |    -    |    +    |    [    |    ]    |         |      |         |          |         |         |         |         |
+// |   CTRL  |    _    |    =    |    (    |    )    |         |      |         |          |         |         |         |         |
+// |   SHIFT |         |         |    {    |    }    |         |      |         |          |         |         |         |         |
 //                               |   ALT   |   BSPC  |   GUI   |      |   ENT   |  SPACE   |         |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
-   &kp TAB   &trans    &none     &none     &kp EQUAL &kp LPAR         &kp RPAR  &kp MINUS  &none     &none     &none     &none
-   &kp LCTRL &none     &none     &none     &none     &kp LBKT         &kp RBKT  &none      &none     &none     &none     &none
-   &kp LSHFT &trans    &trans    &none     &none     &kp LBRC         &kp RBRC  &none      &none     &none     &none     &none
-                                 &kp LALT  &kp BSPC  &trans           &kp RET   &kp SPACE  &none
+   &kp TAB   &trans    &none     &none     &kp EQUAL &kp LPAR         &none        &none        &none         &none        &none         &none
+   &kp LCTRL &none     &none     &none     &none     &kp LBKT         &none        &none        &none         &none        &none         &none
+   &kp LSHFT &trans    &trans    &none     &none     &kp LBRC         &none        &none        &none         &none        &none         &none
+                                 &trans    &trans    &trans           &trans       &trans       &none
                         >;
                 };
 				
