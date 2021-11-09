@@ -87,15 +87,15 @@
                 sym_layer {
 						label = "SYMBOLS";
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |   TAB   |    -    |    +    |    [    |    ]    |    ~    |      |         |          |         |         |         |         |
-// |   CTRL  |    _    |    =    |    (    |    )    |    `    |      |         |          |         |         |         |         |
-// |   SHIFT |         |         |    {    |    }    |         |      |         |          |         |         |         |         |
+// |   TAB   |    +    |    -    |    [    |    ]    |    ~    |      |         |          |         |         |         |         |
+// |   CTRL  |    =    |    _    |    (    |    )    |    `    |      |         |          |         |         |         |         |
+// |   SHIFT |         |         |    {    |    }    |   PIPE  |      |         |          |         |         |         |         |
 //                               |   ALT   |   BSPC  |   GUI   |      |   ENT   |  SPACE   |         |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
-   &kp TAB    &kp KP_MINUS  &kp KP_PLUS   &kp LBKT   &kp RBKT  &kp TILDE     &none        &none        &none         &none        &none         &none
-   &kp LCTRL  &kp UNDER     &kp EQUAL     &kp LPAR   &kp RPAR  &kp GRAVE     &none        &none        &none         &none        &none         &none
-   &kp LSHFT  &trans        &trans        &kp LBRC   &kp RBRC  &none         &none        &none        &none         &none        &none         &none
+   &kp TAB    &kp KP_PLUS   &kp KP_MINUS  &kp LBKT   &kp RBKT  &kp TILDE     &none        &none        &none         &none        &none         &none
+   &kp LCTRL  &kp EQUAL     &kp UNDER     &kp LPAR   &kp RPAR  &kp GRAVE     &none        &none        &none         &none        &none         &none
+   &kp LSHFT  &trans        &trans        &kp LBRC   &kp RBRC  &kp PIPE      &none        &none        &none         &none        &none         &none
                                           &trans     &trans    &trans        &trans       &trans       &none
                         >;
                 };
