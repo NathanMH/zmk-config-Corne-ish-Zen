@@ -105,16 +105,16 @@
                 bt_layer {
 						label = "BLUE";
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |         |         |         |         |         |         |      |         |          |         |         |         |         |
-// |         |   BT 1  |   BT 2  |   BT 3  |   BT 4  |   BT 5  |      |         |          |         |         |         |         |
+// |         |         |         |         |         |         |      | Output  | V_WIN_R  |         |         |         |         |
+// |         |   BT 1  |   BT 2  |   BT 3  |   BT 4  |   BT 5  |      | V_WIN_L |          |         |         |         |         |
 // |         |         |         |         |         |         |      |         |          |         |         |         |         |
 //                               |         | BT CLEAR|         |      |         |          |         |
 // ---------------------------------------------------------------------------------------------------------------------------------
                         bindings = <
-   &none     &trans	  &none        &none         &none        &none         &out OUT_TOG &none      &none     &none     &none     &none
-   &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4  &none        &none      &none     &none     &none     &none
-   &none     &trans       &trans       &none         &none        &none         &none        &none      &none     &none     &none     &none
-                                       &none         &bt BT_CLR   &trans        &none        &none      &none
+   &none     &trans	  &none        &none         &none        &none         &out OUT_TOG      &kp LG(LC(RIGHT)) &none     &none     &none     &none
+   &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4  &kp LG(LC(LEFT))  &none             &none     &none     &none     &none
+   &none     &trans       &trans       &none         &none        &none         &none             &none             &none     &none     &none     &none
+                                       &none         &bt BT_CLR   &trans        &none             &none             &none
                         >;
                 };
         };
